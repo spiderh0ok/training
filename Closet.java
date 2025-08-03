@@ -20,7 +20,7 @@ public class Closet {
         }
         return sizeMatch;
     }
-    public Shirt[] addShirtToArray(Shirt shirt,Shirt[] Shirts){
+    public void addShirtToArray(Shirt shirt,Shirt[] Shirts){
         addShirtToArray(shirt,shirts);
     }
 }
