@@ -3,5 +3,12 @@
 5
 שאלה 2
 5
-
-
+שאלה 3
+הכתוב של PERSON1
+אותה הכתובת
+Name:Yoav , age:16
+Name:Yoav , age:16
+שאלה 4
+Name:Dan , age:16
+שאלה 5
+The heap will have 2 persons named yoav and ben after the gc after that only 1 person will stay cause both persons are linked to one and the other one dosent have anything linked to it
