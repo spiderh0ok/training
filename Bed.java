@@ -10,6 +10,9 @@ public class Bed {
         this.pillowAmount = pillowAmount;
         this.price = price;
     }
+    public Bed(double hight,String color){
+        this(color,1,hight,DEFAULT_PRICE);
+    }
 
     public double getHight() {
         return hight;
@@ -23,9 +26,7 @@ public class Bed {
         return color;
     }
 
-    public Bed(double hight,String color){
-        this(color,1,hight,DEFAULT_PRICE);
-    }
+
 
     public void changeColor (String color){
         this.color = color;

@@ -26,12 +26,7 @@ public class Closet {
         }
         return sizeMatch;
     }
-    public void addShirtToArray(Shirt shirt){
-        Shirt[] newShirts = new Shirt[shirts.length+1];
-        for (int i = 0; i < shirts.length; i++) {
-            newShirts[i] = shirts[i];
-        }
-        newShirts[shirts.length] = shirt;
-        shirts = newShirts;
+    public void addShirtToArrayOfCloset(Shirt shirt){
+        shirts = Util.addShirtToArray(shirt,shirts);
     }
 }

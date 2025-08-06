@@ -6,7 +6,7 @@ public class main {
         Shirt sh4 = new Shirt(7,"red");
         Shirt[] clos = {sh1,sh2,sh3};
         Closet closet = new Closet(clos);
-        closet.addShirtToArray(sh4);
+
         System.out.println(closet.getShirts().length);
     }
 }
