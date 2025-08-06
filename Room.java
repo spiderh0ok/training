@@ -6,6 +6,9 @@ public class Room {
         this.bed = bed;
         this.closet = closet;
     }
+    public Room(Bed bed,Shirt[] shirts){
+        this(bed,new Closet(shirts));
+    }
 
     public Bed getBed() {
         return bed;
@@ -14,9 +17,5 @@ public class Room {
     public Closet getCloset() {
         return closet;
     }
-    public Room(Bed bed,Shirt[] shirts){
-        Closet closet = new Closet(shirts);
-        this.bed = bed;
-        this.closet = closet;
-    }
+
 }

@@ -1,6 +1,6 @@
 public class RafaelConstants {
-    static final int shirtSize = 14;
-    static final String favColor = "Blue";
+    public static final int SHIRT_SIZE = 14;
+    public static final String FAV_COLOR = "Blue";
 
 
 }
