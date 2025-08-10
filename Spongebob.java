@@ -1,4 +1,4 @@
-public class Spongebob extends Fish{
+public class Spongebob extends Fish implements ProfessionalBasketBallPlayer{
 
     public Spongebob(String name, int age, String favFood) {
         super("Spongebob", 22, "crabPatty");
@@ -7,5 +7,10 @@ public class Spongebob extends Fish{
     @Override
     public void goToWork() {
         takeTheCar();
+    }
+
+    @Override
+    public void playBasketBall(){
+        System.out.println(";)");
     }
 }
