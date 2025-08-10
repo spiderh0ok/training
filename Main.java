@@ -56,4 +56,20 @@ public class Main {
 
     }
 
+    public static void ex5(int num) {
+        try {
+            errors(num);
+        }
+        catch (FileNotFoundException fileError){
+            System.out.println(1);
+        }
+        catch (BindException bindException){
+            System.out.println(2);
+        }
+        catch (AuthenticationException authenticationException){
+            System.out.println(3);
+        }
+
+    }
+
 }
