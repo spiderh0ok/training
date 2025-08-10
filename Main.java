@@ -90,5 +90,10 @@ public class Main {
         }
 
     }
+//ex7
+//להאחריך את השם
 
+//ex8
+
+//arr.length-1
 }
