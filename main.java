@@ -13,4 +13,22 @@ public class main {
         }
 
     }
+
+    public void getFishBasketballers(Fish[] fishs){
+        int counter=0;
+        for (Fish fish:fishs){
+            if(fish instanceof ProfessionalBasketBallPlayer fishBaller){
+                counter++;
+            }
+        }
+
+        ProfessionalBasketBallPlayer[] fishBallers = new ProfessionalBasketBallPlayer[counter];
+        counter = 0;
+        for (int i = 0; i < fishs.length ; i++) {
+            if(fishs[i] instanceof ProfessionalBasketBallPlayer fishBaller){
+                fishBallers[counter] = fishBaller;
+            }
+        }
+        sortFishPeople(fishBallers);
+    }
 }
