@@ -1,4 +1,4 @@
-public class Fish {
+public abstract class Fish {
 
     public String name;
     public int age;
@@ -48,4 +48,6 @@ public class Fish {
     public void setFavFood(String favFood) {
         this.favFood = favFood;
     }
+
+    public abstract void goToWork();
 }
