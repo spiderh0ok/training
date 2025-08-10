@@ -1,3 +1,6 @@
+import javax.naming.AuthenticationException;
+import java.io.FileNotFoundException;
+import java.net.BindException;
 import java.util.Scanner;
 
 public class Main {
@@ -43,9 +46,13 @@ public class Main {
         throw new RuntimeException();
     }
 
-    public static void exeptions(){
-
-
+    public static void errors(int num) throws FileNotFoundException, BindException, AuthenticationException {
+        if (num==1)
+            throw new FileNotFoundException("file error");
+        if (num==2)
+            throw new BindException("bind error");
+        if(num==3)
+            throw new AuthenticationException("authection error");
 
     }
 
