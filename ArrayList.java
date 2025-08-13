@@ -35,5 +35,16 @@ public class ArrayList<T> {
 
     }
 
+    public Object[] asArray(){
+        Object[] asArray = new Object[size];
+        for (int i = 0; i <size ; i++) {
+            asArray[i] = arrayList[i];
+        }
+        return asArray;
+
+
+
+    }
+
 
 }

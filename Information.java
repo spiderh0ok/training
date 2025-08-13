@@ -1,7 +1,9 @@
 public interface Information<T> {
 
-    T GetLatestValue();
-    void Update();
-    T[] AsArray();
+    T getLatestValue();
+    void update(T infromation);
+
+
+    T[] asArray();
 
 }
