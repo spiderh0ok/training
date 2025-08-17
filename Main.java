@@ -6,7 +6,19 @@ import java.util.Scanner;
 public class Main {
     public static Scanner reader = new Scanner(System.in);
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
+        try {
+            Exception runTimeException = new RuntimeException("Run time exeption");
+            Exception indexOutOfBoundsException = new IndexOutOfBoundsException("Out of index");
+
+
+            indexOutOfBoundsException.printStackTrace();
+
+            throw runTimeException;
+        }
+        catch (RuntimeException runtimeException) {
+        }
+
 
         try{
             int[] array = new int[2];
@@ -17,7 +29,7 @@ public class Main {
         }
         int input;
 
-        for (int i = 0; i < 5; i--) {
+        while (true) {
             input = reader.nextInt();
             try {
                 if (input == 45) {
@@ -38,12 +50,7 @@ public class Main {
 
 
 
-        Exception runTimeException = new RuntimeException("Run time exeption");
-        Exception indexOutOfBoundsException = new IndexOutOfBoundsException("Out of index");
 
-
-        indexOutOfBoundsException.printStackTrace();
-        throw new RuntimeException();
     }
 
     public static void errors(int num) throws FileNotFoundException, BindException, AuthenticationException {
