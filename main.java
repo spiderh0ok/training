@@ -6,10 +6,9 @@ public class main {
         for (ProfessionalBasketBallPlayer basketBallPlayer : basketBallPlayers){
             if (basketBallPlayer instanceof Fish fish){
                 fish.goToWork();
-                basketBallPlayer.playBasketBall();
             }
-            else
-                basketBallPlayer.playBasketBall();
+            basketBallPlayer.playBasketBall();
+
         }
 
     }

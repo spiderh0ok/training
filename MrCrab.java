@@ -1,7 +1,7 @@
 public class MrCrab extends Fish {
 
     public MrCrab(String name, int age, String favFood) {
-        super("MrCrab", 32, "money");
+        super(name,age, favFood);
     }
     @Override
     public void goToWork() {

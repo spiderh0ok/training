@@ -1,8 +1,8 @@
 public abstract class Fish {
 
-    public String name;
-    public int age;
-    public String favFood;
+    private String name;
+    private int age;
+    private String favFood;
 
 
     public Fish (String name,int age,String favFood){
