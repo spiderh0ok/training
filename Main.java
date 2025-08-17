@@ -1,6 +1,5 @@
 public class Main {
     public static void main(String[] args) {
-
         System.out.println(whatMonthIsDay(31));
     }
 
@@ -15,7 +14,7 @@ public class Main {
 
     public static Month whatMonthIsDay(int day){
         int days=0;
-        for (int i = 0; i < 12; i++) {
+        for (int i = 0; i < Month.values().length; i++) {
             days+=Month.values()[i].getDays();
             if (days>=day)
                 return Month.values()[i];

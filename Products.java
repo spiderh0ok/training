@@ -16,14 +16,13 @@ public enum Products {
         this.name=name;
     }
 
-    public int price(int[] amounts,Products[] items){
-        int price=0;
-        for (int i = 0; i < items.length; i++) {
-            price+=
-
-        }
-
-    }
+//    public static int price(int[] amounts,Products[] items){
+//        int price=0;
+//        for (int i = 0; i < items.length; i++) {
+//
+//        }
+//
+//    }
 
 
 
